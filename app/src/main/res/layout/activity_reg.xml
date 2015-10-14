@@ -1,0 +1,82 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="10"
+    tools:context="com.example.alish.my_git_app_1.RegActivity">
+
+    <TextView
+        android:text="用户名:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_gravity="left"
+        />
+    <EditText
+        android:id="@+id/username"
+        android:layout_columnSpan="2"
+        android:layout_column="1"
+        android:ems="10"
+        android:hint="输入用户名"
+        />
+
+    <TextView
+        android:text="密    码:"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_gravity="left"
+        />
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_columnSpan="2"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:ems="10"
+        android:hint="输入密码"
+        />
+
+    <TextView
+        android:text="性    别:"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_gravity="left"
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="男"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="女"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="爱    好:"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        />
+    <CheckBox
+        android:text="123"
+        />
+    <CheckBox
+        android:text="123"
+        />
+    <CheckBox
+        android:text="123"
+        android:layout_column="1"
+        />
+    <CheckBox
+        android:text="123"
+        />
+
+
+</GridLayout>
