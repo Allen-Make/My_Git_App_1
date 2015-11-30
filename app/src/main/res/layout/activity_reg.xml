@@ -2,30 +2,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="10"
-    tools:context="com.example.alish.my_git_app_1.RegActivity">
+    android:columnCount="12"
+    android:rowCount="12"
+    android:useDefaultMargins="true"
+    android:background="@drawable/b003"
+    tools:context="com.example.alish.my_git_app_1.RegActivity"
+    >
 
     <TextView
         android:text="用户名:"
+        style="@style/RegText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_columnSpan="1"
         android:layout_gravity="left"
+        android:textColor="@color/white_1"
         />
     <EditText
         android:id="@+id/username"
         android:layout_columnSpan="2"
         android:layout_column="1"
         android:ems="10"
-        android:hint="输入用户名"
+        android:hint="输入用户名如：隔壁老王"
+
+        android:textColor="@color/white_1"
         />
 
     <TextView
         android:text="密    码:"
+        style="@style/RegText"
         android:layout_column="0"
         android:layout_columnSpan="1"
         android:layout_gravity="left"
+        android:textColor="@color/white_1"
         />
     <EditText
         android:id="@+id/passwd"
@@ -34,49 +44,133 @@
         android:layout_gravity="left"
         android:ems="10"
         android:hint="输入密码"
+
+        android:textColor="@color/white_1"
         />
 
     <TextView
         android:text="性    别:"
+        style="@style/RegText"
         android:layout_column="0"
         android:layout_columnSpan="1"
         android:layout_gravity="left"
+        android:textColor="@color/white_1"
         />
     <RadioGroup
         android:orientation="horizontal"
         android:layout_gravity="left"
         >
         <RadioButton
+            android:id="@+id/Radio_Man"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="男"
+
+            android:textColor="@color/white_1"
+
             />
         <RadioButton
+            android:id="@+id/Radio_wman"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="女"
+
+            android:textColor="@color/white_1"
             />
 
     </RadioGroup>
 
     <TextView
         android:text="爱    好:"
+        style="@style/RegText"
         android:layout_column="0"
         android:layout_gravity="left"
+        android:textColor="@color/white_1"
         />
     <CheckBox
-        android:text="123"
+        android:id="@+id/Interesting_1"
+        android:text="1"
+        android:textColor="@color/white_1"
         />
     <CheckBox
-        android:text="123"
+        android:id="@+id/Interesting_2"
+        android:text="2"
+        android:textColor="@color/white_1"
         />
     <CheckBox
-        android:text="123"
+        android:id="@+id/Interesting_3"
+        android:text="3"
+        android:textColor="@color/white_1"
         android:layout_column="1"
         />
     <CheckBox
-        android:text="123"
+        android:id="@+id/Interesting_4"
+        android:text="4"
+        android:textColor="@color/white_1"
         />
 
+    <TextView
+        android:text="学    历:"
+        style="@style/RegText"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:layout_gravity="left"
+        android:textColor="@color/white_1"
+        />
+        <Spinner
+            android:id="@+id/Spinner_Edu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="left"
+
+            android:layout_marginBottom="80px"
+            style="@style/Spinner_Edu"
+            >
+
+        </Spinner>
+
+
+    <TextView
+        android:text="学校及专业:"
+        style="@style/RegText"
+        android:layout_column="0"
+        android:layout_row="7"
+        android:layout_gravity="left"
+        android:textColor="@color/white_1"
+        />
+    <Spinner
+        android:id="@+id/Spinner_Edu_Ins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:layout_gravity="left"
+
+        android:layout_marginBottom="80px"
+        style="@style/Spinner_Edu"
+        >
+
+    </Spinner>
+    <Button
+        android:layout_column="1"
+        android:layout_row="10"
+        android:id="@+id/button_Sign"
+        android:text="@string/Sign_Up"
+        android:textColor="@color/white_1"
+        android:background="@drawable/buttonbg"
+
+        />
+    <Button
+        android:layout_column="2"
+        android:layout_row="10"
+        android:id="@+id/button_Back"
+        android:text="@string/Back"
+        android:textColor="@color/white_1"
+        android:background="@drawable/buttonbg"
+        />
 
 </GridLayout>

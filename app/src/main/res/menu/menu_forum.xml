@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.alish.my_git_app_1.ForumActivity">
+    <item
+    android:id="@+id/action_settings"
+    android:title="@string/action_settings"
+    android:orderInCategory="100"
+    android:icon="@drawable/forum1"
+    app:showAsAction="withText|ifRoom" >
+
+        <menu>
+            <item
+                android:id="@+id/sub_1"
+                android:title="选中所有的"
+                ></item>
+            <item
+                android:id="@+id/sub_2"
+                android:title="被选中的"
+                ></item>
+        </menu>
+
+
+    </item>
+
+    <item
+        android:id="@+id/action_settings2"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/menu1"
+        app:showAsAction="withText|ifRoom" >
+
+        <menu>
+            <item
+                android:id="@+id/sub_3"
+                android:title="关注"
+                ></item>
+            <item
+                android:id="@+id/sub_4"
+                android:title="取消关注"
+                ></item>
+        </menu>
+    </item>
+
+
+
+</menu>

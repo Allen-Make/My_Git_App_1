@@ -24,6 +24,10 @@
             android:name=".UserActivity"
             android:label="@string/title_activity_user" >
         </activity>
+        <activity
+            android:name=".ForumActivity"
+            android:label="@string/title_activity_forum" >
+        </activity>
     </application>
 
 </manifest>

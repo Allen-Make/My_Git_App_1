@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         Log.e("Mydebug", "(2)onStart");
         final User person1 = new User();//定义一个person,用来存储用户的名字
+
+
+        //监听按钮1，登录
         final Button button1 = (Button)findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +84,29 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        //监听“我要注册”按钮
+        final  Button Reg_button_1 = (Button)findViewById(R.id.Register_button_1);
+        Reg_button_1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //直接跳转到Register界面
+                Intent intent = new Intent(MainActivity.this,RegActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //监听“进入论坛”按钮
+        final  Button Reg_button_2 = (Button)findViewById(R.id.Register_button_2);
+        Reg_button_2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //直接跳转到论坛界面
+                Intent intent = new Intent(MainActivity.this,ForumActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     //在onStart()后被调用，用于恢复onSaveInstaceState()保存的用户界面
